@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7BEE6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="185dp"
+        android:layout_height="89dp"
+
+        android:fontFamily="@font/akronim"
+        android:shadowColor="#8173AD"
+
+        android:text="Edit X"
+        android:textColor="#ff0000 "
+        android:textSize="86dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="337dp"
+        android:layout_height="361dp"
+        android:background="#C6BDE5"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/img_1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start"
+        android:layout_width="158dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="44dp"
+        android:background="#A8053C"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Edit pic"
+        android:textColor="#BFDEEB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/compress"
+        android:layout_width="158dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="44dp"
+        android:background="#008AB1"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Compress"
+        android:textColor="#BFDEEB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.505" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
